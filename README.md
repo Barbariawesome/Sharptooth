@@ -2,9 +2,6 @@
 
 The files in this repository were used to configure the network depicted below.
 
-1CMeab63TjrhVfJ9SJZOYcibktnP39oK9CktwwUl7piI/edit#
-
-
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible.cfg file may be used to install only certain pieces of it, such as Filebeat.
 
 ~/etc/ansible/roles/filebeat-playbook.yml
@@ -154,26 +151,32 @@ Verify that your playbook is completing Steps 1-4→ Module Status →Check Data
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 
-~/$ curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.1.0-amd64.deb
-~/$ sudo dpkg -i filebeat-8.1.0-amd64.deb
+```~/$ curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.1.0-amd64.deb```
+```~/$ sudo dpkg -i filebeat-8.1.0-amd64.deb```
 
-~/$ ansible-playbook filebeat-playbook.yml
-
+```~/$ ansible-playbook filebeat-playbook.yml```
+```
 sudo apt-get update
 sudo apt install docker.io
 sudo docker pull cyberxsecurity/ansible:latest 
 sudo docker run -ti cyberxsecurity/ansible:latest bash
+```
 To generate and retrieve ssh key:
+```
 ssh-keygen
 cat ~/.ssh/id_rsa.pub
+```
 
-
+```
 $ sudo apt update
 $ sudo apt install software-properties-common
 $ sudo add-apt-repository --yes --update ppa:ansible/ansible
 $ sudo apt install ansible
+```
 Confirm with:
+```
 $ ansible all -m ping --ask-pass
+```
 
 
 # Sharptooth
