@@ -2,6 +2,8 @@
 
 The files in this repository were used to configure the network depicted below.
 
+![](https://github.com/Barbariawesome/Sharptooth/blob/main/Diagrams/Network_Diagram.JPG "Virtual Azure Network")
+
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible.cfg file may be used to install only certain pieces of it, such as Filebeat.
 
 ~/etc/ansible/roles/filebeat-playbook.yml
